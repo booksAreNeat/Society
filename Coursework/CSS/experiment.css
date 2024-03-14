@@ -3,11 +3,9 @@ body{
 }
 
 header{
-    padding: 10px;
     background-color:ghostwhite;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
-    margin: 2%;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -16,7 +14,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1{
-    display: inline;
     font-size:36pt;
 }
 
@@ -39,19 +36,15 @@ aside{
 }
 
 footer{
-    background-color:rgb(236, 130, 201);
+    background-color:rgb(204, 0, 153);
     border-radius:10px;
     font-weight: bold;
 }
 
 nav li{
-    border:2px, solid, rgb(204,0,153);
     background-color:rgb(204, 0, 153);
     background-color:rgb(236, 130, 201);
     list-style-type:None;
-    float:left;
-    width:15%;
-    padding:10px;
 }
 
 nav li a{
@@ -61,13 +54,7 @@ nav li a{
 }
 
 Nav li:hover{
-    background-color:rgb(204, 0 , 153);
-}
-
-Nav ul{
-    margin:0px;
-    padding:0px;
-    overflow:hidden;
+    background-color:rgb(236, 130, 201);
 }
 
 .active{
@@ -94,59 +81,4 @@ Table tr:hover{
 Table th{
     background-color:rgb(0, 139, 139);
     color:white;
-}
-
-#logo {
-    height: 78px;
-    width: 78;
-    float: left;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
-fieldset {
-    display:inline;
-}
-
-input{
-    display:inline;
-}
-
-#left-col{
-    flex: 1;
-    display: inline;
-    align-items:left;
-}
-
-#right-col{
-    padding-left:10px; 
-}
-
-.flex {
-    display: flex;
-}
-
-.gallery-img {
-    width:100%;
-}
-
-#img-gallery {
-    padding-top:10px;
-}
-
-#img-gallery.row {
-    margin-bottom:10px;
-}
-
-.col {
-    width:30%;
-    padding:5px;
-}
-
-.col img {
-    width:100%;
-}
-
-#container {
-    padding:5px;
 }
