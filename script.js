@@ -1,16 +1,6 @@
 var loginCounter = 0;
 var copyCounter = 0;
 
-//function for login button on index page
-function login(){
-    if(loginCounter % 2 == 0){
-        alert('You have been logged in!');
-    } else {
-        alert('You have been logged out!');
-    }
-    loginCounter += 1;
-}
-
 //functin for additional website button
 function copied(){
     if(copyCounter % 2 == 0){
@@ -33,6 +23,7 @@ function delight(x){
     x.style="border: none;"
 }
 
+//function for event validation
 function submit_event() {
     var title = document.forms["event"]["event_title"].value;
     var date = document.forms["event"]["event_date"].value;
@@ -45,6 +36,23 @@ function submit_event() {
         }
         else {
             alert("Event has been submitted. The society will contact you shortly")
+        }
+    }
+}
+
+//function for login validation
+function validate_login() {
+    var email = document.forms["login"]["login_email"].value;
+    var password = document.forms["login"]["login_password"].value;
+    if (email==""){
+        alert("You have not entered an email");
+    }
+    else {
+        if (password==""){
+            alert("You have to enter a password");
+        }
+        else {
+            alert("You have logged in successfully");
         }
     }
 }
